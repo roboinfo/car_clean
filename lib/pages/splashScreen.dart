@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:car_clean/constant/constant.dart';
+import 'package:car_clean/pages/auth/loginscreen.dart';
 import 'package:car_clean/pages/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
         Duration(seconds: 3),
         () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Login())));
+            context, MaterialPageRoute(builder: (context) => LoginScreen())));
   }
 
   @override

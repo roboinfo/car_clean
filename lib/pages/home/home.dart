@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:car_clean/constant/constant.dart';
+import 'package:car_clean/pages/auth/loginscreen.dart';
 import 'package:car_clean/pages/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -369,7 +370,7 @@ class _HomeState extends State<Home> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Login(),
+                                builder: (context) => LoginScreen(),
                               ),
                             );
                           },
