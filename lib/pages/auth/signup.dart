@@ -122,256 +122,287 @@ class _SignupState extends State<Signup> {
         height: double.infinity,
         width: double.infinity,
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFF73AEF5),
-              Color(0xFF61A4F1),
-              Color(0xFF478DE0),
-              Color(0xFF398AE5),
-            ],
-            stops: [0.1, 0.4, 0.7, 0.9],
-          ),
+          image: DecorationImage(
+              image: AssetImage('assets/bg.jpg'), fit: BoxFit.cover),
+          // gradient: LinearGradient(
+          //   begin: Alignment.topCenter,
+          //   end: Alignment.bottomCenter,
+          //   colors: [
+          //     Color(0xFF73AEF5),
+          //     Color(0xFF61A4F1),
+          //     Color(0xFF478DE0),
+          //     Color(0xFF398AE5),
+          //   ],
+          //   stops: [0.1, 0.4, 0.7, 0.9],
+          // ),
         ),
 
 
-        child: Form(
-          key: _formKey,
-          child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-            child: Container(
-              child: ListView(
-                children: [
+        child: Container(
 
-                  const SizedBox(height: 40.0),
-                  Container(
-                    child: Center(
-                      child: const Text(
-                        'Sign Up',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'OpenSans',
-                          fontSize: 30.0,
-                          fontWeight: FontWeight.bold,
+          width: double.infinity,
+          height: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              stops: [0.1, 0.3, 0.5, 0.7, 0.9],
+              colors: [
+                Colors.black.withOpacity(0.4),
+                Colors.black.withOpacity(0.55),
+                Colors.black.withOpacity(0.7),
+                Colors.black.withOpacity(0.8),
+                Colors.black.withOpacity(1.0),
+              ],
+            ),
+          ),
+
+          child: Form(
+            key: _formKey,
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+              child: Container(
+                child: ListView(
+                  children: [
+
+                    const SizedBox(height: 40.0),
+                    Container(
+                      child: Center(
+                        child: const Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'OpenSans',
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 10.0),
+                    const SizedBox(height: 10.0),
 
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        child: const Text(
-                          'Email',
-                          style: kLabelStyle,
-                        ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Container(
-                        alignment: Alignment.centerLeft,
-                        decoration: kBoxDecorationStyle,
-                        height: 60.0,
-                        child: TextFormField(
-                          keyboardType: TextInputType.emailAddress,
-                          autofocus: false,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'OpenSans',
-                          ),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            contentPadding: EdgeInsets.only(top: 14.0),
-                            prefixIcon: Icon(
-                              Icons.email,
-                              color: Colors.white,
-                            ),
-                            hintText: 'Enter your Email',
-                            hintStyle: kHintTextStyle,
-                            errorStyle:
-                                TextStyle(color: Colors.redAccent, fontSize: 15),
-                          ),
-
-                          controller: emailController,
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please Enter Email';
-                            } else if (!value.contains('@')) {
-                              return 'Please Enter Valid Email';
-                            }
-                            return null;
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  const SizedBox(height: 10.0),
-
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        child: const Text(
-                          'Password',
-                          style: kLabelStyle,
-                        ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Container(
-                        alignment: Alignment.centerLeft,
-                        decoration: kBoxDecorationStyle,
-                        height: 60.0,
-                        child: TextFormField(
-                          autofocus: false,
-                          obscureText: true,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'OpenSans',
-                          ),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            contentPadding: EdgeInsets.only(top: 14.0),
-                            prefixIcon: Icon(
-                              Icons.lock,
-                              color: Colors.white,
-                            ),
-                            hintText: 'Enter your Password',
-                            hintStyle: kHintTextStyle,
-                            errorStyle:
-                                TextStyle(color: Colors.redAccent, fontSize: 15),
-                          ),
-                          controller: passwordController,
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please Enter Password';
-                            }
-                            return null;
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  const SizedBox(height: 10.0),
-
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        child: const Text(
-                          'Confirm Password',
-                          style: kLabelStyle,
-                        ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Container(
-                        alignment: Alignment.centerLeft,
-                        decoration: kBoxDecorationStyle,
-                        height: 60.0,
-                        child: TextFormField(
-                          autofocus: false,
-                          obscureText: true,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'OpenSans',
-                          ),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            contentPadding: EdgeInsets.only(top: 14.0),
-                            prefixIcon: Icon(
-                              Icons.lock,
-                              color: Colors.white,
-                            ),
-                            hintText: 'Enter your Password',
-                            hintStyle: kHintTextStyle,
-                            errorStyle:
-                                TextStyle(color: Colors.redAccent, fontSize: 15),
-                          ),
-                          controller: confirmPasswordController,
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please Enter Password';
-                            }
-                            return null;
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  const SizedBox(height: 10.0),
-
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 20.0),
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // Validate returns true if the form is valid, otherwise false.
-                        if (_formKey.currentState.validate()) {
-                          setState(() {
-                            email = emailController.text;
-                            password = passwordController.text;
-                            confirmPassword = confirmPasswordController.text;
-                          });
-                          registration();
-                        }
-                      },
-                      style: ButtonStyle(
-                        backgroundColor:
-                        MaterialStateProperty.all(Colors.white),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(6)),
-                        shape:
-                        MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(25.0),
-                          ),
-                        ),
-                      ),
-
-                      child: const Text(
-                        'Sign Up',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          letterSpacing: 1.5,
-                          fontSize: 22.0,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'OpenSans',
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Already have an Account? ",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w400,
+                        Container(
+                          child: const Text(
+                            'Email',
+                            style: kLabelStyle,
                           ),
                         ),
-                        TextButton(
-                            onPressed: () => {
-                                  Navigator.pushReplacement(
-                                    context,
-                                    PageRouteBuilder(
-                                      pageBuilder:
-                                          (context, animation1, animation2) =>
-                                              LoginScreen(),
-                                      transitionDuration: Duration(seconds: 0),
-                                    ),
-                                  )
-                                },
-                            child: Text('Sign In',style: kLabelStyle,)
-                        )
+                        const SizedBox(height: 10.0),
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200].withOpacity(0.3),
+                            borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                          ),
+                          height: 60.0,
+                          child: TextFormField(
+                            keyboardType: TextInputType.emailAddress,
+                            autofocus: false,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'OpenSans',
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding: EdgeInsets.only(top: 14.0),
+                              prefixIcon: Icon(
+                                Icons.email,
+                                color: Colors.white,
+                              ),
+                              hintText: 'Enter your Email',
+                              hintStyle: kHintTextStyle,
+                              errorStyle:
+                                  TextStyle(color: Colors.redAccent, fontSize: 15),
+                            ),
+
+                            controller: emailController,
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please Enter Email';
+                              } else if (!value.contains('@')) {
+                                return 'Please Enter Valid Email';
+                              }
+                              return null;
+                            },
+                          ),
+                        ),
                       ],
                     ),
-                  )
-                ],
+
+                    const SizedBox(height: 10.0),
+
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          child: const Text(
+                            'Password',
+                            style: kLabelStyle,
+                          ),
+                        ),
+                        const SizedBox(height: 10.0),
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200].withOpacity(0.3),
+                            borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                          ),
+                          height: 60.0,
+                          child: TextFormField(
+                            autofocus: false,
+                            obscureText: true,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'OpenSans',
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding: EdgeInsets.only(top: 14.0),
+                              prefixIcon: Icon(
+                                Icons.lock,
+                                color: Colors.white,
+                              ),
+                              hintText: 'Enter your Password',
+                              hintStyle: kHintTextStyle,
+                              errorStyle:
+                                  TextStyle(color: Colors.redAccent, fontSize: 15),
+                            ),
+                            controller: passwordController,
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please Enter Password';
+                              }
+                              return null;
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 10.0),
+
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          child: const Text(
+                            'Confirm Password',
+                            style: kLabelStyle,
+                          ),
+                        ),
+                        const SizedBox(height: 10.0),
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200].withOpacity(0.3),
+                            borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                          ),
+                          height: 60.0,
+                          child: TextFormField(
+                            autofocus: false,
+                            obscureText: true,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'OpenSans',
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding: EdgeInsets.only(top: 14.0),
+                              prefixIcon: Icon(
+                                Icons.lock,
+                                color: Colors.white,
+                              ),
+                              hintText: 'Enter your Password',
+                              hintStyle: kHintTextStyle,
+                              errorStyle:
+                                  TextStyle(color: Colors.redAccent, fontSize: 15),
+                            ),
+                            controller: confirmPasswordController,
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please Enter Password';
+                              }
+                              return null;
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 10.0),
+
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 20.0),
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // Validate returns true if the form is valid, otherwise false.
+                          if (_formKey.currentState.validate()) {
+                            setState(() {
+                              email = emailController.text;
+                              password = passwordController.text;
+                              confirmPassword = confirmPasswordController.text;
+                            });
+                            registration();
+                          }
+                        },
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all(Colors.white),
+                          padding: MaterialStateProperty.all(EdgeInsets.all(6)),
+                          shape:
+                          MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
+                            ),
+                          ),
+                        ),
+
+                        child: const Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            color: Colors.black,
+                            letterSpacing: 1.5,
+                            fontSize: 22.0,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'OpenSans',
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("Already have an Account? ",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          TextButton(
+                              onPressed: () => {
+                                    Navigator.pushReplacement(
+                                      context,
+                                      PageRouteBuilder(
+                                        pageBuilder:
+                                            (context, animation1, animation2) =>
+                                                LoginScreen(),
+                                        transitionDuration: Duration(seconds: 0),
+                                      ),
+                                    )
+                                  },
+                              child: Text('Sign In',style: kLabelStyle,)
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
