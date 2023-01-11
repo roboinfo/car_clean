@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "836358702765",
+    "project_id": "carclean-44554",
+    "storage_bucket": "carclean-44554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836358702765:android:c4e3601c71848247f9e824",
+        "android_client_info": {
+          "package_name": "com.example.car_clean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836358702765-7900krsnhk6ftirpj7blllu9ingv2b0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0VHPYnZU1hFVhTWWrZVwf08VR3p3OGag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836358702765-7900krsnhk6ftirpj7blllu9ingv2b0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
