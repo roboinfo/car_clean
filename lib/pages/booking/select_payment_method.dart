@@ -120,7 +120,7 @@ class _SelectPaymentMethodState extends State<SelectPaymentMethod> {
                 ),
                 width5Space,
                 Text(
-                  '\$50',
+                  '\₹50',
                   style: black18MediumTextStyle,
                 ),
               ],

@@ -17,10 +17,10 @@ class _HomeState extends State<Home> {
   DateTime currentBackPressTime;
   final serviceProviderList = [
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.866483,
-      'locationLang': 2.362437,
+      'name': 'Shiv\'s Car Wash Services',
+      'address': 'Nehru Nagar, Pimpri,411018',
+      'locationLat': 18.6327,
+      'locationLang': 73.8221,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',
@@ -28,10 +28,10 @@ class _HomeState extends State<Home> {
       'heroTag': 'hero_1'
     },
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.863682,
-      'locationLang': 2.360077,
+      'name': 'Sparkles Car Spa',
+      'address': 'Pimpri,411019 ',
+      'locationLat': 18.6298,
+      'locationLang': 73.7997,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',
@@ -39,10 +39,10 @@ class _HomeState extends State<Home> {
       'heroTag': 'hero_2'
     },
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.855418,
-      'locationLang': 2.292332,
+      'name': 'Sai Washing Services',
+      'address': '411017, Kalewadi,Pimpri',
+      'locationLat': 18.6171,
+      'locationLang': 73.7903,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',
@@ -50,10 +50,10 @@ class _HomeState extends State<Home> {
       'heroTag': 'hero_3'
     },
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.883499,
-      'locationLang': 2.325640,
+      'name': 'Royal Care Center',
+      'address': '411057,Yamuna Nagar, Wakad',
+      'locationLat': 18.6011,
+      'locationLang': 73.7641,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',
@@ -61,10 +61,10 @@ class _HomeState extends State<Home> {
       'heroTag': 'hero_4'
     },
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.850444,
-      'locationLang': 2.283868,
+      'name': 'Mauli Washing Services',
+      'address': '411026, MIDC, Bhosari',
+      'locationLat': 18.6321,
+      'locationLang': 73.8468,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',
@@ -72,10 +72,10 @@ class _HomeState extends State<Home> {
       'heroTag': 'hero_5'
     },
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.863755,
-      'locationLang': 2.293532,
+      'name': 'DE Dhakka Washing Services',
+      'address': 'Chinchwad, 411033',
+      'locationLat': 18.6298,
+      'locationLang': 73.7997,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',
@@ -83,10 +83,10 @@ class _HomeState extends State<Home> {
       'heroTag': 'hero_6'
     },
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.871619,
-      'locationLang': 2.315213,
+      'name': 'GoMechanic',
+      'address': 'Yerawada, 411006',
+      'locationLat': 18.5529,
+      'locationLang': 73.8797,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',
@@ -94,10 +94,10 @@ class _HomeState extends State<Home> {
       'heroTag': 'hero_7'
     },
     {
-      'name': 'Perfect Wash Services',
-      'address': '108, Yogi Point, New York.',
-      'locationLat': 48.865037,
-      'locationLang': 2.332377,
+      'name': 'Savidnya Washing Centre',
+      'address': 'Alandi ,412105',
+      'locationLat': 18.6783,
+      'locationLang': 73.8950,
       'image': 'assets/service_provider/provider_1.jpg',
       'cost': '50',
       'rating': '4.5',

@@ -104,7 +104,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                   color: primaryColor,
                   alignment: Alignment.center,
                   child: Text(
-                    'Book now (\$$total)',
+                    'Book now (\₹total)',
                     style: white18BoldTextStyle,
                   ),
                 ),
@@ -213,12 +213,12 @@ class _ServiceProviderState extends State<ServiceProvider> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Perfect Wash Services',
+            'Sai Washing Services',
             style: black18BoldTextStyle,
           ),
           heightSpace,
           Text(
-            '108, Yogi Point, New York',
+            '411018,Sant Tukaram Nagar,',
             style: grey14MediumTextStyle,
           ),
           heightSpace,
@@ -423,7 +423,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             ),
                             heightSpace,
                             Text(
-                              '\$50',
+                              '\₹50',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -520,7 +520,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             ),
                             heightSpace,
                             Text(
-                              '\$80',
+                              '\₹80',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -624,7 +624,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             ),
                             heightSpace,
                             Text(
-                              '\$90',
+                              '\₹90',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -719,7 +719,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             ),
                             heightSpace,
                             Text(
-                              '\$70',
+                              '\₹70',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -784,7 +784,8 @@ class _ServiceProviderState extends State<ServiceProvider> {
           ),
           heightSpace,
           Text(
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit pharetra luctus turpis quis senectus vitae dis nisl porttitor. Et id venenatis, potenti sapien purus aliquam est. Tellus ut tincidunt id mi cum. Bibendum vestibulum blandit semper aenean egestas nunc dignissim id.',
+            'Sai Washing Centre is dedicated to car Maintenance, Protection, Beautification and Security.'
+                'Get rid of all your unwanted car dents and restore your car shine with our car denting and painting services.',
             style: black14RegularTextStyle,
             textAlign: TextAlign.justify,
           ),
